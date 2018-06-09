@@ -1,0 +1,17 @@
+#
+#	Logrotate fragment for squid.
+#
+/var/log/squid/*.log {
+	daily
+        compress
+        delaycompress
+        rotate 3
+        missingok
+        nocreate
+        sharedscripts
+        postrotate
+              test ! -e /var/run/squid.pid || test ! -x /usr/sbin/squid || /usr/sbin/squid -k rotate
+              sleep 120
+              /usr/share/lightsquid/lightparser.pl access.log.1
+        endscript
+}

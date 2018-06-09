@@ -1,0 +1,13 @@
+#список сайтов, разрешенных всем юзерам, даже не авторизованным на проксе
+.www.google.ru
+tools.google.com
+dl.google.com
+blog.it-kb.ru
+vmholding.krokus.ru
+www.elevel.ru
+.officeimg.vo.msecnd.net
+.office.microsoft.com
+.office15client.microsoft.com
+.officeapps.live.com
+.ex0.krokus.ru
+.ex.krokus.ru
